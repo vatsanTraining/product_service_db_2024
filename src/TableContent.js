@@ -7,7 +7,7 @@ const TableContent = () => {
     { orderNumber: 101, customerName: "Lokesh", orderValue: 67000 },
     { orderNumber: 102, customerName: "Mahi", orderValue: 77000 },
     { orderNumber: 103, customerName: "Balaji", orderValue: 87000 },
-    { customerName: "viek", orderValue: 97000 },
+    { orderNumber: 104, customerName: "viek", orderValue: 97000 },
   ];
   return (
     <div>

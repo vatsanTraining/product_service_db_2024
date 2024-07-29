@@ -14,11 +14,13 @@ const TableBody = ({ rowRef }) => {
   return <tbody>{rowRef.map(createElement)}</tbody>;
 };
 
+let Order = PropTypes.shape({
+  orderNumber: PropTypes.number.isRequired,
+  customerName: PropTypes.string,
+  orderValue: PropTypes.number.isRequired,
+});
+
 TableBody.propTypes = {
-    orderNumber: PropTypes.number.isRequired,
-    customerName: PropTypes.string,
-    orderValue: PropTypes.number,
-  };
+  rowRef: PropTypes.arrayOf(Order),
+};
 export default TableBody;
-
-

@@ -1,8 +1,9 @@
 import React from "react";
+import PropType from 'prop-types'
 const TableHead = ({ colRef }) => {
 
     const createElement = (element,idx)=>{
-return <td key={idx}>{element}</td>
+return <th key={idx}>{element}</th>
     }
   return (
       <thead>
@@ -13,6 +14,9 @@ return <td key={idx}>{element}</td>
   );
 };
 
+TableHead.propType ={
+    colRef:PropType.array
+}
 
 
 export default TableHead;
