@@ -1,4 +1,5 @@
 import "./App.css";
+import "./style.css";
 import Content from "./Content";
 import Footer from "./Footer";
 import Header from "./Header";

@@ -8,16 +8,19 @@ const Content = ({ element, offers }) => {
     return <li key={idx}>{element}</li>;
   };
   return (
-    <div>
-              <Header majheading={"Electronics"} minheading={"Televisions"} renderImage={false}></Header>
-
-
-      <p>{productName}</p>
-      <p>{ratePerUnit}</p>
-
-      <ul>{offers.map(createElement)}</ul>
-      <Footer></Footer>
-    </div>
+    <>
+      <div className="container">
+        <Header
+          majheading={"Electronics"}
+          minheading={"Televisions"}
+          renderImage={false}
+         ></Header>
+      </div>
+      <div>
+        <ul>{offers.map(createElement)}</ul>
+        <Footer></Footer>
+      </div>
+    </>
   );
 };
 
