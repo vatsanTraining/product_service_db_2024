@@ -9,7 +9,8 @@ const Content = ({ element, offers }) => {
   };
   return (
     <div>
-      <Header majheading={"Siva Stores"} minheading={"Nashik"}></Header>
+              <Header majheading={"Electronics"} minheading={"Televisions"} renderImage={false}></Header>
+
 
       <p>{productName}</p>
       <p>{ratePerUnit}</p>

@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
 
-const Link = ({link,linkText}) => {
-  return (
-    <a href={link}>{linkText}</a>
-  )
-}
+const Link = ({ links }) => {
+  const createElement = (element, idx) => {
+    return (
+      <a key={idx} href={element.link}>
+        {element.linkText}
+      </a>
+    );
+  };
 
-export default Link
+  return links.map(createElement);
+};
+
+export default Link;
