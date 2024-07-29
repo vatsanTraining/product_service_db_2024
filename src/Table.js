@@ -1,18 +1,18 @@
-import React from 'react'
-import TableBody from './TableBody'
-import TableHead from './TableHead'
-const Table = ({colRef,rowRef,handleChange}) => {
+import React from "react";
+import TableBody from "./TableBody";
+import TableHead from "./TableHead";
+const Table = ({ colRef, rowRef, handleChange }) => {
   return (
     <>
-    <label>Search by Customer Name</label>
-    <input type='search' name="custName" onChange={handleChange}></input>
+      <label>Search by Customer Name</label>
+      <input type="search" name="custName" onChange={handleChange}></input>
 
-    <table>
+      <table className="table table-striped">
         <TableHead colRef={colRef}></TableHead>
         <TableBody rowRef={rowRef}></TableBody>
-    </table>
+      </table>
     </>
-  )
-}
+  );
+};
 
-export default Table
+export default Table;

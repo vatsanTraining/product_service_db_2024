@@ -3,13 +3,16 @@ import PropTypes from "prop-types";
 
 const TableBody = ({ rowRef }) => {
   const createElement = (element, idx) => {
-    return (
-      <tr key={idx}>
-        <td>{element.orderNumber}</td>
-        <td>{element.customerName}</td>
-        <td>{element.orderValue}</td>
-      </tr>
-    );
+    let keys = Object.keys(element);
+    console.log(keys);
+      return (
+        <tr key={idx}>
+          <td>{element.orderNumber}</td>
+          <td>{element.customerName}</td>
+          <td>{element.orderValue}</td>
+        </tr>
+      );
+    
   };
   return <tbody>{rowRef.map(createElement)}</tbody>;
 };

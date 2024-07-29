@@ -6,6 +6,7 @@ import Header from "./Header";
 import NavBar from "./NavBar";
 import TableContent from "./TableContent";
 import ShowProduct from "./ShowProduct";
+import AddProduct from "./AddProduct";
 function App() {
   const product = {
     productName: "Sony Tv",
@@ -29,6 +30,7 @@ function App() {
       <Content element={product} offers={offers}></Content>
       <TableContent></TableContent>
       <ShowProduct></ShowProduct>
+      <AddProduct></AddProduct>
       <Footer></Footer>
     </div>
   );
