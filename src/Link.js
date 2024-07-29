@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Link = () => {
+const Link = ({link,linkText}) => {
   return (
-    <div>Link</div>
+    <a href={link}>{linkText}</a>
   )
 }
 

@@ -3,6 +3,12 @@ import NavBar from "./NavBar";
 // function Header({majheading,minheading}){}
 import Image from "./Image";
 function Header(props) {
+  const linkList = [
+    {link:"/home",linkText:"Home" },
+    {link:"/product",linkText:"Product" },
+    {link:"/offices",linkText:"Offices" },
+    
+  ]
   const { majheading, minheading } = props;
   return (
     <div>
