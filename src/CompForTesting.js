@@ -18,7 +18,7 @@ const CompForTesting = ({name,handleClick}) => {
 
            <button type='button' role='testing' data-testid='btn4' 
            onClick={()=>{
-            handleClick("thanks")
+            handleClick("HelloWorld")
            }}>Testing</button>
 
     </div>

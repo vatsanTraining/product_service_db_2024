@@ -1,5 +1,6 @@
 import { fireEvent, getByAltText, getByTestId, render, screen } from "@testing-library/react";
 import CompForTesting from "./CompForTesting";
+import userEvent from "@testing-library/user-event";
 
 it("increments the counter", () => {
   const { getByTestId } = render(<CompForTesting />);
@@ -24,20 +25,21 @@ it("decrements the counter", () => {
      expect(screen.getByRole('resetBtn')).toBeInTheDocument()
   })
 
-// it('should call the handleClick with Helloworld',()=>{
+it('should call the handleClick with Helloworld',()=>{
 
-//      const handleClickMock = jest.fn();
+     const handleClickMock = jest.fn();
 
-//      const {getByTestId}=render(
-//         <CompForTesting name={"ramesh"} handleclick={handleClickMock}>
-//           </CompForTesting>
-//           )
+     render(
+        <CompForTesting name={"ramesh"} handleClick={handleClickMock}>
+          </CompForTesting>
+          )
 
-//           fireEvent.click(getByTestId("btn4"))
+          userEvent.click(screen.getByRole("testing"))
 
-//           expect(handleClickMock).toHaveBeenCalledWith('thanks')
+          expect(handleClickMock).toHaveBeenCalled()
+          expect(handleClickMock).toHaveBeenCalledWith("HelloWorld")
      
-// })
+})
 
 
 
