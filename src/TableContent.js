@@ -15,7 +15,6 @@ const TableContent = () => {
 
   const handleChange = (event) => {
     let srch = event.target.value;
-    
     setSearch(srch);
 
     const filteredList = rowRef.filter((element) =>

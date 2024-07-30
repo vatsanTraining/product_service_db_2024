@@ -1,34 +1,35 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, createElement } from "react";
 import { useData } from "./useData";
 import axios from "axios";
+import Table from "./Table";
+import TableContent from "./TableContent";
+import { AgGridReact } from "ag-grid-react";
+import "ag-grid-community/styles/ag-grid.css";
+import "ag-grid-community/styles/ag-theme-alpine.css";
 
 const ShowProduct = () => {
   //   const { data } = useData("http://localhost:5550/api/v1/products");
 
   const [data, setData] = useState([]);
 
-  const handleData = (eachElement, idx) => {
-    return(
-      <div key={idx}>
-        <p>{eachElement.productName}</p>
-        <p>{eachElement.ratePerUnit}</p>
-      </div>
-    );
-  };
+  const colDefs= [{ field: "productId" }, { field: "productName" }, { field: "ratePerUnit" }];
+
 
   const fetchData = async () => {
     const response = await axios.get("http://localhost:5550/api/v1/products");
 
     setData(response.data);
   };
+
+
   useEffect(() => {
     fetchData();
   }, []);
 
   return (
-    <div>
-      <h1>Product List</h1>
-      {data.map(handleData)}
+    <div className="ag-theme-alpine" style={{ height: 800, width: 600 }}>
+            <AgGridReact rowData={data} columnDefs={colDefs} />
+
     </div>
   );
 };

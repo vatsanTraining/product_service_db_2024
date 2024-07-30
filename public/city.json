@@ -1,0 +1,8 @@
+[
+    {"id":101,"cityName":"Chennai","address":"Siruseri","icon":"chennai.jpeg"},
+    {"id":102,"cityName":"Pune","address":"Hinjewadi","icon":"pune.jpeg"},
+    {"id":103,"cityName":"Mumbai","address":"Andheri","icon":"mumbai.jpeg"},
+    {"id":104,"cityName":"Hyderabad","address":"Madhapur","icon":"Hyderabad.jpeg"}
+
+]
+

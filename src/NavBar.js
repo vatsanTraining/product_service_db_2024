@@ -1,10 +1,10 @@
 import React from 'react'
-import Link from './Link'
+import RouteLinks from './RouteLinks'
 
 const NavBar = ({linkList}) => {
   return (
     <div>
-        <Link links={linkList}></Link>
+        <RouteLinks links={linkList}></RouteLinks>
     </div>
   )
 }

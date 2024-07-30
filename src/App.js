@@ -2,16 +2,14 @@ import "./App.css";
 import "./style.css";
 import Header from "./Header";
 import NavBar from "./NavBar";
+import TableContent from "./TableContent";
 function App() {
-  const product = {
-    productName: "Sony Tv",
-    ratePerUnit: 45000,
-  };
-  const offers = ["Independence Day Offer 15%", "New User 10%"];
   const linkList = [
     { link: "/home", linkText: "Home" },
-    { link: "/product", linkText: "Product" },
+    { link: "/products", linkText: "Product" },
     { link: "/offices", linkText: "Offices" },
+    { link: "/orders", linkText: "Order" },
+
   ];
 
   return (

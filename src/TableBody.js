@@ -1,10 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const TableBody = ({ rowRef }) => {
+const TableBody = ({rowRef}) => {
+  
   const createElement = (element, idx) => {
-    let keys = Object.keys(element);
-    console.log(keys);
       return (
         <tr key={idx}>
           <td>{element.orderNumber}</td>
