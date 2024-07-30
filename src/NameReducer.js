@@ -1,15 +1,12 @@
+const initialState = { firstName: "", lastName: "" };
 
-const initialState = {firstName:'',lastName:''}
-
-
-export default NameReducer = (state=initialState,{type,payload}) =>{
-
-    switch (type) {
-        case 'CHANGE_FIRST_NAME':
-            return {...state,firstName:payload}
-     case 'CHANGE_LAST_NAME':
-        return {...state,lastName:payload}
-        default:
-            return state;
-    }
-}
+export default (state = initialState, { type, payload }) => {
+  switch (type) {
+    case "CHANGE_FIRST_NAME":
+      return { ...state, firstName: payload };
+    case "CHANGE_LAST_NAME":
+      return { ...state, lastName: payload };
+    default:
+      return state;
+  }
+};

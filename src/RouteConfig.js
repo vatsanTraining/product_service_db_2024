@@ -7,6 +7,7 @@ import Home from "./Home";
 import TableContent from "./TableContent";
 import ContextWrapper from "./ContextWrapper";
 import OfficeContext from "./OfficeContext";
+import ReduxCompOne from "./ReduxCompOne";
 export const RouteConfigs = () => {
   let elements = useRoutes([
     { path: "/", element: <AddProduct /> },
@@ -15,6 +16,7 @@ export const RouteConfigs = () => {
     { path: "/home", element: <Home /> },
     { path: "/orders", element: <TableContent /> },
     { path: "/context", element: <ContextWrapper /> },
+    { path: "/redux", element: <ReduxCompOne /> }
   ]);
 
   return elements;

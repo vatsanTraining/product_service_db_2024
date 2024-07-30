@@ -1,4 +1,5 @@
 import React,{useSelector,useDispatch} from 'react-redux'
+import ButtonPanel from './ButtonPanel'
 
 const ReduxCompOne = () => {
 
@@ -32,9 +33,7 @@ const ReduxCompOne = () => {
 
         <p>{firstName}{lastName}</p>
         
-        <button>Change First Name</button>
-        <button>Change Last Name</button>
-
+  <ButtonPanel changeFirst={handleFirstNameChange} changeLast ={handleLastNameChange}></ButtonPanel>
     </div>
   )
 }

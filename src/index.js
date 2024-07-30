@@ -9,6 +9,7 @@ import { RouteConfigs } from "./RouteConfig";
 import OfficeContext from "./OfficeContext";
 import { Provider } from "react-redux";
 import { store } from "./Store";
+import ReduxCompOne from "./ReduxCompOne";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -16,6 +17,7 @@ root.render(
     <BrowserRouter>
     <Provider store={store}>
       <App />
+      <ReduxCompOne></ReduxCompOne>
       </Provider>
       <RouteConfigs></RouteConfigs>
     </BrowserRouter>

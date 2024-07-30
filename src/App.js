@@ -11,6 +11,7 @@ function App() {
     { link: "/offices", linkText: "Offices" },
     { link: "/orders", linkText: "Order" },
     { link: "/context", linkText: "Context API" },
+    { link: "/redux", linkText: "Redux Example" }
   ];
 
   return (
