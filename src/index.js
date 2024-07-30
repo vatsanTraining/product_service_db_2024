@@ -10,17 +10,18 @@ import OfficeContext from "./OfficeContext";
 import { Provider } from "react-redux";
 import { store } from "./Store";
 import ReduxCompOne from "./ReduxCompOne";
+import AxiosExample from "./AxiosExample";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+   <Provider store={store}>
     <BrowserRouter>
-    <Provider store={store}>
       <App />
-      <ReduxCompOne></ReduxCompOne>
-      </Provider>
       <RouteConfigs></RouteConfigs>
     </BrowserRouter>
+    </Provider>
+<AxiosExample></AxiosExample>
   </React.StrictMode>
 );
 
