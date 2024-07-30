@@ -9,6 +9,8 @@ function App() {
     { link: "/products", linkText: "Product" },
     { link: "/offices", linkText: "Offices" },
     { link: "/orders", linkText: "Order" },
+    { link: "/context", linkText: "Context API" },
+  
 
   ];
 

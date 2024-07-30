@@ -5,6 +5,7 @@ import ShowOffices from "./ShowOffices";
 import AddProduct from "./AddProduct";
 import Home from "./Home";
 import TableContent from "./TableContent";
+import ContextWrapper from "./ContextWrapper";
 export const RouteConfigs = () => {
   let elements = useRoutes([
     { path: "/", element: <AddProduct /> },
@@ -12,6 +13,7 @@ export const RouteConfigs = () => {
     { path: "/offices", element: <ShowOffices /> },
     { path: "/home", element: <Home /> },
     { path: "/orders", element: <TableContent /> },
+    { path: "/context", element: <ContextWrapper /> },
   ]);
 
   return elements;
