@@ -8,7 +8,6 @@ import "ag-grid-community/styles/ag-grid.css";
 import "ag-grid-community/styles/ag-theme-alpine.css";
 
 const ShowProduct = () => {
-  //   const { data } = useData("http://localhost:5550/api/v1/products");
 
   const [data, setData] = useState([]);
 
