@@ -1,10 +1,11 @@
-import React from "react";
-import {useData} from "./useData";
+import React, { useContext } from "react";
+import { useData } from "./useData";
+import { OfficeListContext } from "./OfficeContext";
 const ShowOffices = () => {
-  let offices = useData("city.json");
+  
+  const  officeList  = useContext(OfficeListContext);
 
   const createElement = (offices, idx) => {
-
     var imgRef = "./images/" + offices.icon;
 
     return (
@@ -16,9 +17,9 @@ const ShowOffices = () => {
     );
   };
 
-  return <div className="container">{offices.data.map(createElement)}</div>;
+  return (
+    <div className="container">{officeList?.map(createElement)} </div>
+  );
 };
 
 export default ShowOffices;
-
-<img src="/image.jpg" alt="image" />;

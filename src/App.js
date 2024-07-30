@@ -3,6 +3,7 @@ import "./style.css";
 import Header from "./Header";
 import NavBar from "./NavBar";
 import TableContent from "./TableContent";
+import OfficeContext from "./OfficeContext";
 function App() {
   const linkList = [
     { link: "/home", linkText: "Home" },
@@ -10,8 +11,6 @@ function App() {
     { link: "/offices", linkText: "Offices" },
     { link: "/orders", linkText: "Order" },
     { link: "/context", linkText: "Context API" },
-  
-
   ];
 
   return (
