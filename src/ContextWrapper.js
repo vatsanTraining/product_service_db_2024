@@ -4,6 +4,7 @@ import ContextConsumer from './ContextConsumer'
 import { MyContext } from './MyContext';
 import AnotherConsumer from './AnotherConsumer';
 import { GiftContext } from './GiftContext';
+import ConsumerWithOutProver from './ConsumerWithOutProver';
 
 const ContextWrapper = () => {
 
@@ -19,6 +20,9 @@ const ContextWrapper = () => {
   <ContextConsumer></ContextConsumer>
 </MyContext.Provider>
 </GiftContext.Provider>
+
+<ConsumerWithOutProver></ConsumerWithOutProver>
+
     </div>
   )
 }
